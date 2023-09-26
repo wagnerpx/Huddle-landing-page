@@ -1,0 +1,32 @@
+@media (max-width: 1080px){
+    .illustration{
+        grid-template-columns: 1fr;
+    }
+
+    .illustration .image {
+        background: url('../images/bg-mobile.svg') center center no-repeat;
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+
+    .illustration .text h2{
+        text-align: center;
+        font-size: 4rem;
+    }
+
+    .illustration .text p{
+        text-align: center;
+    }
+
+    .illustration .text .btn{
+        align-self: center;
+        margin-top: 30px;
+    }
+
+    .footer{
+        display: flex;
+        justify-content: center;
+    }
+    
+}

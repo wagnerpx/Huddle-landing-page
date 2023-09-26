@@ -1,0 +1,106 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: var(--font-family-open-sans);
+    font-weight: 400;
+    font-size: 1.8rem;
+    max-width: var(--max-width-size);
+    margin: 0 auto;
+    background: url('../images/bg-desktop.svg') center center no-repeat;
+    background-size: cover;
+    background-color: var(--Violet);
+    display: grid;
+    grid-template-areas: "logo logo"
+                         "illustration illustration"
+                         "footer footer";
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* LOGO */
+
+.logo{
+    grid-area: logo;
+    margin: 50px;
+}
+
+/* ILLUSTRATION */
+
+.illustration{
+    grid-area: illustration;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.illustration .image{
+    display: flex;
+    margin: 40px;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.illustration .text{
+    padding: 17%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.illustration .text h2{
+    font-weight: 700;
+    font-size: 3.4rem;
+}
+
+.illustration .text p{
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+.illustration .text .btn{
+    border-radius: 25px;
+    color: var(--Violet);
+    background-color: white;
+    align-self: flex-start;
+    padding: 12px 70px;
+    transition: 0.3s;
+}
+
+.illustration .text .btn:hover{
+    background-color: var(--Soft-Magenta);
+    color: white;
+}
+
+/* FOOTER */
+
+.footer{
+    grid-area: footer;
+}
+
+.footer .social{
+    display: flex;
+    margin-bottom: 60px;
+    max-width: 96%;
+    justify-content: flex-end;
+}
+
+.footer .social a{
+    display: flex;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    transition: 0.3s;
+}
+
+.footer .social a:hover{
+    color: var(--Soft-Magenta);
+    border: 1px solid var(--Soft-Magenta);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
