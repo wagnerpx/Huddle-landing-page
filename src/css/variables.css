@@ -3,7 +3,7 @@
     --font-family-open-sans: 'Open Sans', sans-serif;
 
     --Violet: hsl(257, 40%, 49%);
-    --Soft-Magenta: hsl(300, 69%, 71%);
+    --Soft-Magenta: rgb(232, 130, 232);
 
     --max-width-size: 1440px;
 }

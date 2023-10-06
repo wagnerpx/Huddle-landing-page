@@ -1,11 +1,12 @@
-@media (max-width: 1080px){
+@media(max-width: 1440px){
     .illustration{
         grid-template-columns: 1fr;
     }
 
     .illustration .image {
-        background: url('../images/bg-mobile.svg') center center no-repeat;
-        max-width: 80%;
+        background-image: url('../images/mobile-design.jpg');
+        background-size: cover;
+        max-width: 100%;
         margin: 0 auto;
         padding: 0 40px;
     }
