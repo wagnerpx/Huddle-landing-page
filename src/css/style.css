@@ -2,7 +2,7 @@ html{
     font-size: 62.5%;
 }
 body{
-    font-family: var(--font-family-open-sans);
+    font-family: var(--Open-sans);
     font-weight: 400;
     font-size: 1.8rem;
     max-width: var(--max-width-size);
@@ -25,13 +25,17 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-/* .illustration .image{
+.illustration .image{
+    background: url(/src/images/illustration-mockups.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: content;
     display: flex;
     margin: 40px;
     justify-content: center;
     height: 100%;
     width: 100%;
-} */
+}
 .illustration .text{
     padding: 17%;
     color: white;
@@ -47,22 +51,36 @@ body{
     margin: 20px 0;
 }
 .illustration .text .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--Poppins);
     border-radius: 25px;
     color: var(--Violet);
     background-color: white;
-    align-self: flex-start;
-    padding: 12px 70px;
+    width: 200px;
+    height: 55px;
+    -webkit-transition-duration: 0.4s;  
+    transition-duration: 0.4s;  
+    -webkit-transition-property: -webkit-transform;  
+    transition-property: transform;  
+    -webkit-transform: translateZ(0);  
+    -ms-transform: translateZ(0);  
+    transform: translateZ(0);  
+    transition: 0.3s ease-in-out;
     transition: 0.3s;
 }
 .illustration .text .btn:hover{
     background-color: var(--Soft-Magenta);
     color: white;
+    -webkit-transform: translateY(-2px);  
+    -ms-transform: translateY(-2px);  
+    transform: translateY(-2px);
+    box-shadow: 1.5px 1.5px 1.5px 1px rgba(0, 0, 0, 0.69);
 }
-
 .footer{
     grid-area: footer;
 }
-
 .footer .social{
     display: flex;
     margin-bottom: 60px;
@@ -77,13 +95,22 @@ body{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 1px solid #fff;
-    transition: 0.3s;
+    border: 2px solid #fff;
+    -webkit-transition-duration: 0.4s;  
+    transition-duration: 0.4s;  
+    -webkit-transition-property: -webkit-transform;  
+    transition-property: transform;  
+    -webkit-transform: translateZ(0);  
+    -ms-transform: translateZ(0);  
+    transform: translateZ(0); 
+    transition: 0.3s ease-in-out;
 }
 .footer .social a:hover{
     color: var(--Soft-Magenta);
-    border: 1px solid var(--Soft-Magenta);
+    border: 2px solid var(--Soft-Magenta);
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    -webkit-transform: translateY(-15px);  
+    -ms-transform: translateY(-15px);  
+    transform: translateY(-15px);
+    box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.69);
 }

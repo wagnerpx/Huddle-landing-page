@@ -1,14 +1,26 @@
 @media(max-width: 1440px){
-    .illustration{
-        grid-template-columns: 1fr;
+    body{
+        background-image: url(../images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: cover;
     }
 
-    .illustration .image {
-        background-image: url('../images/mobile-design.jpg');
-        background-size: cover;
-        max-width: 100%;
+    .illustration{
+        display: grid;
+        padding: 3em;
+        grid-template-columns: repeat(auto-fill, minmax(90%, 1fr));
+    }
+
+    .illustration .image{
+        width: 700px;
+        height: 500px;
         margin: 0 auto;
-        padding: 0 40px;
+    }
+
+    .illustration .image img{
+        width: 100%;
+        height: 100%;
     }
 
     .illustration .text h2{
@@ -20,14 +32,17 @@
         text-align: center;
     }
 
-    .illustration .text .btn{
-        align-self: center;
+    .illustration .text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin-top: 30px;
     }
 
     .footer{
         display: flex;
         justify-content: center;
+        align-items: center;
     }
     
 }
